@@ -130,7 +130,7 @@ APT (Advanced Package Tool) 是 Debian 和 Ubuntu 系列操作系统的核心包
 
 **命令：`sudo apt autoremove`**
 
-*   **作用**：自动卸载那些为了满足其他软件包依赖而自动安装，但现在不再被任何程序所需要的软件包（俗称“孤儿包”）。
+*   **作用**：自动卸载那些为了满足其他软件包依赖而自动安装，但现在不再被任何程序所需要的软件包。
 *   **解释**：这是一个很好的系统清理习惯。在执行 `upgrade` 或 `remove` 后，可以运行一下此命令。
 *   **示例**：
     ```bash
@@ -178,7 +178,7 @@ APT (Advanced Package Tool) 是 Debian 和 Ubuntu 系列操作系统的核心包
 
 ### 换源步骤（以切换至清华大学源为例）
 
-1.  **备份原来的源列表文件**（非常重要的安全步骤！）
+1.  **备份原来的源列表文件**
     ```bash
     sudo cp /etc/apt/sources.list /etc/apt/sources.list.backup
     ```
